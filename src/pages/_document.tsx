@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
@@ -10,20 +11,13 @@ export default function Document() {
           disable-devtool-auto
           src="https://cdn.jsdelivr.net/npm/disable-devtool"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[];
-                w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-                var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;
-                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-WD62MGGN');
-            `,
-          }}
-        />
+        <script>
+          window.pixelId = "66c641c58509d9abbf5d9edb"; var a =
+          document.createElement("script"); a.setAttribute("async", "");
+          a.setAttribute("defer", ""); a.setAttribute("src",
+          "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+          document.head.appendChild(a);
+        </script>
         {/* Adiciona o script da biblioteca @noscrape/noscrape */}
         <Script
           src="https://cdn.jsdelivr.net/npm/@noscrape/noscrape/dist/noscrape.min.js"
@@ -43,17 +37,6 @@ export default function Document() {
         />
       </Head>
       <body>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WD62MGGN"
-            height="0"
-            width="0"
-            style={{
-              display: 'none',
-              visibility: 'hidden',
-            }}
-          ></iframe>
-        </noscript>
         <Main />
         <NextScript />
       </body>
