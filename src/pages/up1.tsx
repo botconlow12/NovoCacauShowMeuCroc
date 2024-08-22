@@ -58,7 +58,7 @@ export default function Home() {
             <h1 className="text-2xl font-bold">Por: R$ 29,90</h1>
           </div>
           <a
-            href="https://pay.finalizarpagamentoo.online/YEwR3ArOwOPZdKy"
+            href="https://pay.finalizar-show.com/P5LNZ8nqzOzgaRy"
             className="w-full flex justify-center items-center gap-3 p-5 bg-[#64c45b] text-white rounded-lg shadow-xl"
           >
             <h1 className="text-xl font-bold">COMPRAR AGORA!</h1>
