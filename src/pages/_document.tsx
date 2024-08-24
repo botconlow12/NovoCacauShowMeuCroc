@@ -7,10 +7,10 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
-        <script
+        {/* <script
           disable-devtool-auto
           src="https://cdn.jsdelivr.net/npm/disable-devtool"
-        />
+        /> */}
         <script>
           window.pixelId = "66c641c58509d9abbf5d9edb"; var a =
           document.createElement("script"); a.setAttribute("async", "");
@@ -18,23 +18,6 @@ export default function Document() {
           "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
           document.head.appendChild(a);
         </script>
-        {/* Adiciona o script da biblioteca @noscrape/noscrape */}
-        <Script
-          src="https://cdn.jsdelivr.net/npm/@noscrape/noscrape/dist/noscrape.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="noscrape-initializer"
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (window.Noscrape) {
-                Noscrape.init({
-                  // Opções de configuração, se houver
-                });
-              }
-            `,
-          }}
-        />
       </Head>
       <body>
         <Main />
