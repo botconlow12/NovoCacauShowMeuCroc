@@ -6,10 +6,10 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
-        {/* <script
+        <script
           disable-devtool-auto
           src="https://cdn.jsdelivr.net/npm/disable-devtool"
-        /> */}
+        />
         <script>
           window.pixelId = "66c641c58509d9abbf5d9edb"; var a =
           document.createElement("script"); a.setAttribute("async", "");
